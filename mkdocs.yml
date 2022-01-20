@@ -1,0 +1,11 @@
+site_name: Test
+
+theme: readthedocs
+pages:
+    - Home: index.md
+    - About: about.md
+    - User Guide:
+        - Instructions: user-guide/instructions.md
+        
+extra:
+    version: 0.1
