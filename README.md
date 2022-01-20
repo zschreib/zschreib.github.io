@@ -1,2 +1,2 @@
 # Project Hub
-## Documentation repository for various tools
+Documentation repository for various tools
