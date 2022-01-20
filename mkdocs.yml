@@ -1,6 +1,13 @@
 site_name: Test
 
-theme: readthedocs
+site_url: https://zschreib.github.io
+
+
+docs_dir: docs/
+
+theme:
+    name: readthedocs
+
 pages:
     - Home: index.md
     - About: about.md
@@ -9,3 +16,5 @@ pages:
         
 extra:
     version: 0.1
+    
+  
