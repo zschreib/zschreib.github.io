@@ -1,0 +1,101 @@
+# Site
+repository: zschreib.github.io
+favicon: images/favicon.ico
+
+# Content configuration version
+version: 2
+
+# Personal info
+name: Zachary Schreiber
+title: PhD | Bioinformatics Data Science
+email: zschreibr@gmail.com
+#website: https://github.com/zschreib/
+
+# Dark Mode (true/false/never)
+darkmode: true
+
+# Social links
+github_username: zschreib
+orcid_username: 0000-0002-6271-2754
+googlescholar_username: vxdsIfwAAAAJ
+
+# Additional icon links
+additional_links:
+- title: Tool Instructions
+  icon: fas fa-cog
+  url: https://zschreib.github.io/tool-instructions/
+
+# About Section
+about_title: About Me
+#about_profile_image: images/profile.jpg
+about_content: | # this will include new lines to allow paragraphs
+  Hello, my name is Zach. I am a bioinformatician and data scientist with ten years of lab research experience. I specialize in large-scale data analysis and the application of advanced machine learning techniques to uncover meaningful patterns and relationships in complex biological data. My work focuses on developing innovative approaches that bridge data science and biology to gain deeper insights into genomic and protein-level information.
+
+
+  I am most proficient in:<mark>Python (NumPy, Pandas, scikit-learn, PyTorch, Biopython)</mark>, <mark>Docker, AWS, Conda</mark>, <mark>SQL/PostgreSQL</mark>, <mark>Bash/Unix</mark>, <mark>Git</mark>
+
+content:
+  - title: Projects
+    layout: list
+    content:
+      - layout: top-middle
+        title: PHIDRA
+        link: https://github.com/zschreib/phidra
+        additional_links:
+          - title: zschreib/phidra
+            icon: fab fa-github
+            url: https://github.com/zschreib/phidra
+        quote: >
+          Protein Homology Identification via Domain-Related Architecture
+        description: |
+          A simple way to search and validate identified Pfam domains of interest against a curated InterProScan Domain Architecture (IDA) file to check whether or not your proteins match a domain composition found in the InterPro Database.
+
+      - layout: top-middle
+        title: ORION
+        link: https://github.com/zschreib/orion
+        additional_links:
+          - title: zschreib/orion
+            icon: fab fa-github
+            url: https://github.com/zschreib/orion
+        quote: >
+          ORf Interaction Ontology Network
+        description: |
+          A fast, scalable computational framework for exploring patterns of protein cluster (PC) organization across genomes, contigs, or viral operational taxonomic unit (vOTU) sequences. ORION analyzes the spatial arrangement of neighboring PCs to detect recurring genomic patterns, capturing both known functional associations and revealing structure within uninformative or poorly annotated data.
+
+  - title: Experience # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Viral Ecology and Informatics Lab (VEIL)
+        sub_title: Research assistant
+        caption: 2015 - 2025
+
+        description: | # this will include new lines to allow paragraphs
+            Contributed to the development of computational pipelines for large-scale viral genomics projects, focusing on sequence curation, annotation, and visualization. Assisted in building tools to analyze metagenomic data, validate domain architectures, and track replication-associated genes across diverse viral datasets. Collaborated closely with interdisciplinary teams to integrate bioinformatics workflows, optimize data processing, and support machine learning model training for functional protein analysis. This work established flexible frameworks that can be adapted and translated to other fields of research, including pharmaceutical development, medical genomics, and broader applications in computational biology.
+
+  - title: Education # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: University of Delaware
+        caption: 2025
+        sub_title: PhD Bioinformatics Data Science
+        description: | # this will include new lines to allow paragraphs
+          During my time at UD I developed scalable methods for analyzing phage metagenomic data, with a focus on identifying patterns in uninformative viral sequences (viral dark matter).
+
+          Leveraged machine learning and fine-tuned protein language models to investigate replication-associated proteins and their impact on genome-to-phenome relationships. Designed and implemented workflows that transform sequence data into protein embedding representations, capturing both primary and structural information to further contextualize protein similarity.
+
+
+# Footer
+footer_show_references: true
+# references_title: References on request (Override references text)
+
+# Build settings
+remote_theme: sproogen/modern-resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
